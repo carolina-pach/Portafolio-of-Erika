@@ -1,0 +1,223 @@
+:root {
+  --background-color: #FDE5EC;
+  --color-word: #e27c7e;
+  --section-color: #FEF6F7;
+  --hover-color: #F7C59F;
+}
+
+
+body {
+  background-color: var(--background-color);
+  color: var(--color-word);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-weight: bold;
+  margin: 0;
+ 
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+h1 {
+  font-size: 200%;
+  font-weight: 150%;
+  margin: 2%;
+}
+
+nav ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: 10%;
+  margin-left: 15%;
+ 
+ 
+
+
+}
+
+#project li {
+  padding: 15px;
+  text-decoration: none;
+
+}
+/*comment: how to move the list items under nav to be in the same line as h1. How to eliminate the underline of links*/
+nav li {
+  margin-right: 10%;
+  background-color: var(--color-word);
+  color: var(--background-color);
+  padding: 2% 3%;
+  text-decoration: none;
+  border-radius: 10px;
+  
+
+}
+
+nav li:hover {
+
+  background-color: var(--hover-color);
+  
+
+}
+
+/*how to get image to cover the screen*/
+#cover-image {
+  max-width: 100%;
+  margin: 0%;
+  
+}
+
+
+main {
+  margin-top: 250px;
+
+}
+
+h2{
+  font-size: 300%;
+  position:relative;
+  top: -150px;
+
+
+}
+/*how to move the about me without leaving its space behind*/
+.about-me{
+  
+  background-color: var(--hover-color);
+  width: 50%;
+  padding: 5%;
+  margin: 10% 0;
+  position: relative;
+  top: 85px;
+  font-weight: 200%;
+  border-radius: 0 25px 25px 0;
+  object-fit: contain;
+
+
+}
+.margin{
+  margin: 0%;
+}
+/*
+.me-image{
+  
+
+  border-radius: 50%;
+  
+
+}
+*/
+.align-items {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+.contact {
+  margin-top: 200px;
+  background-color: var(--hover-color);
+  width: 50%;
+  padding: 4%;
+  margin: 10% 0;
+  top: 85px;
+  border-radius: 20px 0 0 20px;
+  
+}
+
+p{
+  font-size: 125%;
+  
+}
+
+span {
+  font-weight: bolder;
+  font-size: 120% ;
+}
+
+.contact li {
+  margin-bottom: 4%;
+  overflow: hidden;
+}
+
+h3 {
+  margin-bottom: 5%;
+  font-weight: bolder;
+  font-size: 200%;
+  object-fit: contain;
+
+
+}
+
+#larger-image{
+  font-size: 300%;
+ 
+  top: -150px;
+
+
+}
+
+#larger-image img{
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 50px;
+ 
+
+
+}
+
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+
+ 
+}
+
+.other.images{
+  flex-direction: row;
+  
+
+  
+}
+
+#hover-image{
+  max-width:50%;
+  max-height:50%;
+  margin: 2px;
+
+}
+
+#hover-image:hover{
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+  nav li {
+    font-size: 15%;
+    padding: 0%;
+  }
+  .me-image{
+    width: 100%;
+  }
+  
+}
+div{
+  border: 9px solid red;
+}
+/*
+@media screen and (max-width: 400px) {
+  .other-images {
+    width: 100%;
+  }
+}*/
