@@ -67,7 +67,7 @@ nav li:hover {
 
 }
 
-/*how to get image to cover the screen*/
+/*image to cover the screen*/
 #cover-image {
   max-width: 100%;
   margin: 0%;
@@ -86,8 +86,19 @@ h2{
   top: -150px;
 
 
+
 }
-/*how to move the about me without leaving its space behind*/
+
+
+
+.me-image{
+  object-fit: contain;
+  height: 50%;
+  width: 70%;
+  border-radius: 20px;
+
+}
+
 .about-me{
   
   background-color: var(--hover-color);
@@ -105,15 +116,7 @@ h2{
 .margin{
   margin: 0%;
 }
-/*
-.me-image{
-  
 
-  border-radius: 50%;
-  
-
-}
-*/
 .align-items {
   display: flex;
   justify-content: flex-end;
@@ -150,10 +153,10 @@ span {
 h3 {
   margin-bottom: 5%;
   font-weight: bolder;
-  font-size: 200%;
+  font-size: 150%;
   object-fit: contain;
 
-
+ 
 }
 
 #larger-image{
@@ -212,12 +215,21 @@ h3 {
   }
   
 }
-div{
-  border: 9px solid red;
+
+@media screen and (max-width: 500px) {
+ #project li {
+  padding: 12px;
+  text-decoration: none;
+  margin-right:5px;
+
+
 }
-/*
-@media screen and (max-width: 400px) {
-  .other-images {
-    width: 100%;
-  }
-}*/
+h2 {
+  font-size: 260%;
+}
+h1 {
+  font-size: 150%;
+}
+ 
+  
+}
